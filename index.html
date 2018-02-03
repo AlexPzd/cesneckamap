@@ -28,21 +28,35 @@
     }
     //New map
      var map = new google.maps.Map(document.getElementById('map'),options);
-
+/*
  var marker = new google.maps.Marker({
    position: {lat: 50.107505, lng: 14.544582},
    map: map
  });
+*/
+
+ //Add marker function
 
 
-    var infoWindow = new google.maps.InfoWindow({
-      content: '<h3>Dobra česnečka za 40 kc</h3>'
-    });
+
+    function addMarker (coords, caption) {
+      var marker = new google.maps.Marker({
+        position: coords,
+        map: map
+      });
+        var infoWindow = new google.maps.InfoWindow({
+          content: caption
+        });
+           marker.addListener ('click', function(){
+             infoWindow.open (map,marker);
+           });
+
+      };
 
 
-       marker.addListener ('click', function(){
-         infoWindow.open (map,marker);
-       });
+    addMarker({lat: 50.107505, lng: 14.544582}, '<h3>Dobra česnečka za 40 kc</h3>');
+    addMarker({lat: 50.087728, lng: 14.452802}, '<h3>Dobra česnečka za 35 kc</h3>');
+
 
 }
   </script>
