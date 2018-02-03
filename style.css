@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:1rem;
+  line-height:1.5;
+  color: #333;
+  overflow-x: hidden;
+  background-image: url('img1.jpg');
+  background-size: 100%;
+}
+
+header {
+  height: 100%;
+  text-align: center;
+  color: #f4f4f4;
+  background-color: #57ABD3;
+  opacity: 0.8;
+}
