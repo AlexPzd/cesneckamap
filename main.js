@@ -21,8 +21,9 @@ let markerArray  = [
 { coords : {lat: 50.087728, lng: 14.452802},
   caption: '<h3>"Planeta Zizkov" Dobra česnečka za 35 kc</h3>'
 },
-  {coords : {lat: 50.082420, lng: 14.457480},
-  caption: '<h3>"Žižkovský Restaurant Olše" Dobra česnečka za 45 kc</h3>', 
+
+{coords : {lat: 50.082420, lng: 14.457480},
+caption: '<h3>"Žižkovský Restaurant Olše" Dobra česnečka za 45 kc</h3>',
 },
 ]
 
