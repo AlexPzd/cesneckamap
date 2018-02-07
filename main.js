@@ -27,6 +27,8 @@ caption: '<h3>"Žižkovský Restaurant Olše" Dobra česnečka za 45 kc</h3>',
 },
 ]
 
+console.log(markerArray);
+
 //Add marker function
 function addMarker (coords, caption) {
   var marker = new google.maps.Marker({
