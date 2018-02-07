@@ -12,6 +12,7 @@
         width:100%;
       }
     </style>
+    <script src="main.js"></script>
         <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -41,52 +42,6 @@
           <footer class="main-footer">
         		<span>&copy;2018 AP</span>
         	</footer>
-
-  <script>
-    function initMap() {
-      //Map options
-           var options = {
-             zoom: 11,
-             center: {lat:50.0755, lng:14.4378}
-    }
-    //New map
-     var map = new google.maps.Map(document.getElementById('map'),options);
-/*
- var marker = new google.maps.Marker({
-   position: {lat: 50.107505, lng: 14.544582},
-   map: map
- });
-*/
-
- //Add marker function
-
-
-
-    function addMarker (coords, caption) {
-      var marker = new google.maps.Marker({
-        position: coords,
-        map: map
-      });
-  if (caption) {
-        var infoWindow = new google.maps.InfoWindow({
-          content: caption
-        });
-           marker.addListener ('click', function(){
-             infoWindow.open (map,marker);
-           });
-
-      };
-    }
-
-
-    addMarker({lat: 50.107505, lng: 14.544582}, '<h3>Dobra česnečka za 40 kc</h3>');
-    addMarker({lat: 50.087728, lng: 14.452802}, '<h3>Dobra česnečka za 35 kc</h3>');
-
-
-}
-  </script>
-
-
     <script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnm_VR6Zmjc-HxvIkaVs8QaQWHONVyEKU&callback=initMap">
    </script>
